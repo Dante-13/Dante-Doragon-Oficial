@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link href="../CSS/DDO-Style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<img src="../IMG/Danger-Dragon.png" alt="Logo Dante Doragon" class="Logo1">
+		<h1 class="Title">DANTE DORAGON</h1>
+		<img src="../IMG/Danger-Dragon.png" alt="Logo Dante Doragon" class="Logo2">
+	</header>
+	<nav>
+		<ul>
+			<div class="topnav" id="myTopnav">
+				<a href="../index.html" class="active">INICIO</a>
+				<a href="Acerca-de.html" target="_blank">ACERCA DE</a>
+				<a href="Portfolio.html" target="_blank">PORTFOLIO</a>
+				<a href="Trabajos.html" target="_blank">TRABAJOS</a>
+				<a href="Contacto.html" target="_blank">CONTACTO</a>
+			<div class="dropdown">
+			<button class="dropbtn">MÁS
+				<i class="fa fa-caret-down"></i>
+			</button>
+				<div class="dropdown-content">
+					<a href="Personajes.html" target="_blank">PERSONAJES</a>
+					<a href="Legiones.html" target="_blank">LEGIONES</a>
+					<a href="Armaduras.html" target="_blank">ARMADURAS</a>
+					<a href="Historias.html" target="_blank">HISTORIAS</a>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+		</ul>
+<br>
+		<ul>
+			<li><a href="#Link-1">Trabajos Analogos y Digitales</a></li>
+		</ul>
+	</nav>
+<br>
+	<main>
+	  <section id="Link-1">
+			<h1>Trabajos Analogos y Digitales</h1>
+	  </section>
+	</main>
+<div class="row">
+  <div class="column">
+    <img src="../IMG/Dragon Fuego.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor imagehorizontal">
+  </div>
+  <div class="column">
+    <img src="../IMG/Leviathan Agua.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor imagehorizontal">
+  </div>
+  <div class="column">
+    <img src="../IMG/Anubis Tierra.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor imagehorizontal">
+  </div>
+  <div class="column">
+    <img src="../IMG/Quetzalcoatl Aire.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor imagehorizontal">
+  </div>
+  <div class="column">
+    <img src="../IMG/Space-Marine-SPLASH-1500.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../IMG/Space-Marine-MENU-1500.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../IMG/Space-Marine-JUEGO-1500.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../IMG/Space-Marine-JUEGO-2-1500.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../IMG/Croco-Nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../IMG/Doragon Knights.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal1" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="../IMG/Dragon Fuego.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="../IMG/Leviathan Agua.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="../IMG/Anubis Tierra.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="../IMG/Quetzalcoatl Aire.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+      <img src="../IMG/Space-Marine-SPLASH-1500.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+      <img src="../IMG/Space-Marine-MENU-1500.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 10</div>
+      <img src="../IMG/Space-Marine-JUEGO-1500.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 10</div>
+      <img src="../IMG/Space-Marine-JUEGO-2-1500.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 10</div>
+      <img src="../IMG/Croco-Nature.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="../IMG/Doragon Knights.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption1"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo imagehorizontal" src="../IMG/Dragon Fuego.jpg" onclick="currentSlide(1)" alt="DragonFuego" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img class="demo imagehorizontal" src="../IMG/Leviathan Agua.jpg" onclick="currentSlide(2)" alt="LeviatanAgua" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img class="demo imagehorizontal" src="../IMG/Anubis Tierra.jpg" onclick="currentSlide(3)" alt="AnubisTierra" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img class="demo imagehorizontal" src="../IMG/Quetzalcoatl Aire.jpg" onclick="currentSlide(4)" alt="QuetzalcoatlAire" style="width:100%">
+    </div>
+
+	<div class="column">
+      <img class="demo" src="../IMG/Space-Marine-SPLASH-1500.jpg" onclick="currentSlide(5)" alt="Croco-Nature" style="width:100%">
+    </div>
+
+	<div class="column">
+      <img class="demo" src="../IMG/Space-Marine-MENU-1500.jpg" onclick="currentSlide(6)" alt="SM-Splash" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="../IMG/Space-Marine-JUEGO-1500.jpg" onclick="currentSlide(7)" alt="SM-Menu" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="../IMG/Space-Marine-JUEGO-2-1500.jpg" onclick="currentSlide(8)" alt="SM-Juego1" style="width:100%">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="../IMG/Croco-Nature.jpg" onclick="currentSlide(9)" alt="SM-Juego2" style="width:100%">
+    </div>
+
+	<div class="column">
+      <img class="demo" src="../IMG/Doragon Knights.jpg" onclick="currentSlide(10)" alt="Doragon Knights" style="width:100%">
+    </div>
+  </div>
+</div>
+<br>
+<footer>
+	<a href="https://www.instagram.com/dantedoragon1/" target="_blank"><img src="../IMG/instagram.png" alt="Instagram" class="icono container-all-img1"><p class="container-all-p1">dantedoragon1</p></a>
+	<a href="https://www.facebook.com/dante.doragon.7/" target="_blank"><img src="../IMG/Facebook.png" alt="Facebook" class="icono container-all-img2"><p class="container-all-p2">Dante Doragon</p></a>
+	<br>
+	<h5>Elaborado por: Aldo Cortés Báez</h5>
+</footer>
+<script src="../JS/DDO-Script.js"></script>
+</body>
+</html>
